@@ -5,4 +5,6 @@
 #COLORS
 Y = '\033[93;1m'
 
+
+os.system("clear")
 print('\033[93;1mScript MOKAD AJG \033[0m')
