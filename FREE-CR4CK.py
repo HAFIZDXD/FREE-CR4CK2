@@ -9,6 +9,6 @@ def logo():
 	os.system("clear")
 	time.sleep(10)
 	os.system("clear")
-	print (f"""{Y}
-{Y}
+	print (f"""{'033[93;1m'}
+{'033[93;1m'}
 print('\033[93;1mSCRIPT SEDANG TIDAK ADA HASIL JADI SEMENTARA WAKTU SCRIPT DI TUTUP HINGGA FACEBOOK NORMAL \033[0m')
