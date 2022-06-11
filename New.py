@@ -274,12 +274,8 @@ def menu(my_name,my_id):
 	except:birth = '-'
 	banner()
 	
-	sg = '✓ HafizdXD✓'
-	print("""%s GUNAKAN TOOLS INI DENGAN BIJAK🛑"""%(h))
-	print("""%s FOLLOW MY GITHUB 🛑"""%(h))
-	print("""%s SC KAYA AKAN TEH HIJAU 🛑"""%(h))
-	print("""%s CODED' BY 🛑 HAFIZDXD🛑 """%(h))
-	print("""%s ALOK GANZZ 🛑 NEW UPDATE VERSION 🛑 """%(h))
+	sg = 'INFORMASI USER'
+	print("""%s USER : FREE USER"""%(h))
 	fx = mark(sg, style='green')
 	sol().print(fx)
 	print(h+'['+h+'➣'+h+'] NAMA AKUN  : '+str(my_name))
