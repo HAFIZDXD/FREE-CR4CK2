@@ -274,8 +274,8 @@ def menu(my_name,my_id):
 	except:birth = '-'
 	banner()
 	
-	sg = 'INFORMASI USER'
-	print("""%s USER : FREE USER"""%(h))
+	sg = 'USER : FREE'
+	print("""%s INFORMASI USER"""%(h))
 	fx = mark(sg, style='green')
 	sol().print(fx)
 	print(h+'['+h+'➣'+h+'] NAMA AKUN  : '+str(my_name))
