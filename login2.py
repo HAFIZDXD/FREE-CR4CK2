@@ -1,5 +1,5 @@
 import os
-
+os.system("git pull")
 cookie=input('INPUT COOKIE :')
 token=input('INPUT TOKEN : ')
 open('.cookie.txt','w').write(cookie)
