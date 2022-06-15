@@ -177,7 +177,6 @@ def license():#line:42
           open ('apikey.txt','w').write (O000O000OOO000OOO )#line:60 #ganti token & id om
           print (f"{H}[{U}*{H}]{U} Expired :{K} {OOO00OO00O0O0OOOO['expires'].split('T')[0]}");time .sleep (2 );login()#line:61
     elif OOO00O0OOO00OO00O in ['3','03']:#line:62
-    else :#line:64
       exit (f"{U}[{H}!{U}]{h} Wrong Input")#line:65
   except (KeyError ):#line:66
     exit (f"{U}[{H}!{U}]{h} Api Key Invalid")#line:67
