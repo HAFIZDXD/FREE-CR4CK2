@@ -301,8 +301,8 @@ def menu(my_name,my_id):
 	except:birth = '-'
 	banner()
 	
-	sg = 'USER : FREE'
-	print("""%s INFORMASI USER"""%(h))
+	sg = 'Lisensi : YOUR KEY EXPIRED 2022-07-15'
+	print("""%s INFORMASI KEY"""%(h))
 	fx = mark(sg, style='green')
 	sol().print(fx)
 	print(h+'['+h+'➣'+h+'] NAMA AKUN  : '+str(my_name))
