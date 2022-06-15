@@ -161,9 +161,8 @@ def license():#line:42
     os.system("git pull")
     os .system ('clear')
     print (f"""
-{U}[{H}1{U}]{H} Beli License
+{U}[{H}1{U}]{H} Chat Admin untuk meminta lisensi
 {U}[{H}2{U}]{H} Masukan License
-{U}[{H}3{U}]{H} List Harga License {U}{H}{U}{H}
 """)#line:49
     OOO00O0OOO00OO00O =input (f"{H}[{H}?{H}]{H} Choose :{K} ")#line:50
     if OOO00O0OOO00OO00O in ['1','01']:#line:51
@@ -178,8 +177,6 @@ def license():#line:42
           open ('apikey.txt','w').write (O000O000OOO000OOO )#line:60 #ganti token & id om
           print (f"{H}[{U}*{H}]{U} Expired :{K} {OOO00OO00O0O0OOOO['expires'].split('T')[0]}");time .sleep (2 );login()#line:61
     elif OOO00O0OOO00OO00O in ['3','03']:#line:62
-      print("[•] 50k 1bulan")
-      input("%s[•] TEKAN ENTER"%(h));license()
     else :#line:64
       exit (f"{U}[{H}!{U}]{h} Wrong Input")#line:65
   except (KeyError ):#line:66
