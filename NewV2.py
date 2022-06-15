@@ -166,7 +166,7 @@ def license():#line:42
 """)#line:49
     OOO00O0OOO00OO00O =input (f"{H}[{H}?{H}]{H} Choose :{K} ")#line:50
     if OOO00O0OOO00OO00O in ['1','01']:#line:51
-      print (f"{H}[{H}!{H}]{H} Send Message..");time .sleep (3 );os.system('xdg-open https://wa.me/6285758862225?text=bang');exit ()#line:52
+      print (f"{H}[{H}!{H}]{H} Send Message..");time .sleep (3 );os.system('xdg-open wa.me/6285758862225?text=bang');exit ()#line:52
     elif OOO00O0OOO00OO00O in ['2','02']:#line:53
       O000O000OOO000OOO =input (f"{H}[{U}?{H}]{U} Api Key :{K} ")#line:54
       if len (O000O000OOO000OOO )==0 :#line:55
