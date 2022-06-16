@@ -1185,11 +1185,15 @@ def hamz_bot():
         os.system('rm -rf login.txt')
 
 if __name__=='__main__':
-	try:os.mkdir('/sdcard/4MBF-DATA/CP')
+	try:os.system('git pull')
 	except:pass
-	try:os.mkdir('/sdcard/4MBF-DATA/OK')
+	try:os.system('touch .prox.txt')
 	except:pass
-	try:os.mkdir('/sdcard/4MBF-DATA/DUMP')
+	try:os.mkdir('/sdcard/V7-DATA/CP')
 	except:pass
-	login()
+	try:os.mkdir('/sdcard/V7-DATA/OK')
+	except:pass
+	try:os.mkdir('/sdcard/V7-DATA/DUMP')
+	except:pass
+	license()
 
