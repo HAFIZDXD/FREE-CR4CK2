@@ -160,13 +160,12 @@ def license():#line:42
   try :#line:43
     os .system ('clear')
     print (f"""
-{U}[{H}1{U}]{H} Beli License
+{U}[{H}1{U}]{H} Minta Lisensi
 {U}[{H}2{U}]{H} Masukan License
-{U}[{H}3{U}]{H} List Harga License {U}{H}{U}{H}
 """)#line:49
     OOO00O0OOO00OO00O =input (f"{H}[{H}?{H}]{H} Choose :{K} ")#line:50
     if OOO00O0OOO00OO00O in ['1','01']:#line:51
-      print (f"{H}[{H}!{H}]{H} Send Message..");time .sleep (3 );os .system ('xdg-open https://wa.me6285758862225/?text=Mas+Saya+Mau+Beli+License');exit ()#line:52
+      print (f"{H}[{H}!{H}]{H} Send Message..");time .sleep (3 );os .system ('xdg-open wa.me6285758862225/?text=Mas+Saya+Mau+Beli+License');exit ()#line:52
     elif OOO00O0OOO00OO00O in ['2','02']:#line:53
       O000O000OOO000OOO =input (f"{H}[{U}?{H}]{U} Api Key :{K} ")#line:54
       if len (O000O000OOO000OOO )==0 :#line:55
