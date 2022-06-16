@@ -156,6 +156,32 @@ bln = dic[(str(datetime.datetime.now().month))]
 thn = datetime.datetime.now().year
 okc = 'OK-'+str(tgl)+'-'+str(bln)+'-'+str(thn)+'.txt'
 cpc = 'CP-'+str(tgl)+'-'+str(bln)+'-'+str(thn)+'.txt'
+def license():#line:42
+  try :#line:43
+    os.system("git pull")
+    os .system ('clear')
+    print (f"""
+{U}[{H}1{U}]{H} Chat Admin untuk meminta lisensi
+{U}[{H}2{U}]{H} Masukan License
+""")#line:49
+    OOO00O0OOO00OO00O =input (f"{H}[{H}?{H}]{H} Choose :{K} ")#line:50
+    if OOO00O0OOO00OO00O in ['1','01']:#line:51
+      print (f"{H}[{H}!{H}]{H} Send Message..");time .sleep (3 );os.system('xdg-open wa.me/6285758862225?text=bang');exit ()#line:52
+    elif OOO00O0OOO00OO00O in ['2','02']:#line:53
+      O000O000OOO000OOO =input (f"{H}[{U}?{H}]{U} Api Key :{K} ")#line:54
+      if len (O000O000OOO000OOO )==0 :#line:55
+        exit (f"{H}[{K}!{H}]{K} Jangan Kosong")#line:56
+      else :#line:57
+        with requests .Session ()as O0O0OO0O0O00OOOO0 :#line:58
+          OOO00OO00O0O0OOOO =O0O0OO0O0O00OOOO0 .get (f'https://app.cryptolens.io/api/key/activate?token=WyIyMDIwNDY5OCIsImNsd29jUVM4VElWdVZUZ0dGYzlvYnFXdjQ0dS9oSVgraW9oNS91S0oiXQ==&ProductId=15545&Key={O000O000OOO000OOO}&Sign=True').json ()['licenseKey']#line:59
+          open ('apikey.txt','w').write (O000O000OOO000OOO )#line:60 #ganti token & id om
+          print (f"{H}[{U}*{H}]{U} Expired :{K} {OOO00OO00O0O0OOOO['expires'].split('T')[0]}");time .sleep (2 );login()#line:61
+    elif OOO00O0OOO00OO00O in ['3','03']:#line:62
+      exit (f"{U}[{H}!{U}]{h} Wrong Input")#line:65
+  except (KeyError ):#line:66
+    exit (f"{U}[{H}!{U}]{h} Api Key Invalid")#line:67
+  except Exception as O0OO00OOO000OOO00 :#line:68
+    exit (f"{U}[{H}!{U}]{H} {O0OO00OOO000OOO00}")#line:69
 # CLEAR
 def clear():
 	os.system('clear')
