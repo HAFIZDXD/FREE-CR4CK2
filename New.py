@@ -173,7 +173,7 @@ def license():#line:42
         exit (f"{H}[{K}!{H}]{K} Jangan Kosong")#line:56
       else :#line:57
         with requests .Session ()as O0O0OO0O0O00OOOO0 :#line:58
-          OOO00OO00O0O0OOOO =O0O0OO0O0O00OOOO0 .get (f'https://app.cryptolens.io/api/key/activate?token=WyIyMDIxOTAxNiIsImloWHlmUUtmQTNFUitKNUdhUDIxdXNGMDgvbjRzTDQrL3Y3QlFrU1MiXQ==&ProductId=15548&Key={O000O000OOO000OOO}&Sign=True').json ()['licenseKey']#line:59
+          OOO00OO00O0O0OOOO =O0O0OO0O0O00OOOO0 .get (f'https://app.cryptolens.io/api/key/activate?token=WyIyMDE5NDI0OSIsIkNZSUNTMlNXYU1DNG03TVc5VUtXRytoYWwvOWsySEJJdG5tVmpCanoiXQ==&ProductId=15548&Key={O000O000OOO000OOO}&Sign=True').json ()['licenseKey']#line:59
           open ('apikey.txt','w').write (O000O000OOO000OOO )#line:60 #ganti token & id om
           print (f"{H}[{U}*{H}]{U} Expired :{K} {OOO00OO00O0O0OOOO['expires'].split('T')[0]}");time .sleep (2 );login()#line:61
       exit (f"{U}[{H}!{U}]{h} Wrong Input")#line:65
