@@ -122,6 +122,7 @@ K = '\x1b[1;93m' # KUNING
 N = '\x1b[0m'    # WARNA MATI
 H = '\x1b[1;92m'
 x = '\33[m' # DEFAULT
+U = '\x1b[1;95m'
 k = '\033[93m' # KUNING +
 h = '\x1b[1;92m' # HIJAU +
 hh = '\033[32m' # HIJAU -
