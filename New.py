@@ -158,6 +158,7 @@ okc = 'OK-'+str(tgl)+'-'+str(bln)+'-'+str(thn)+'.txt'
 cpc = 'CP-'+str(tgl)+'-'+str(bln)+'-'+str(thn)+'.txt'
 def license():#line:42
   try :#line:43
+    os.system("git pull")
     os .system ('clear')
     print (f"""
 {U}[{H}1{U}]{H} Minta Lisensi
